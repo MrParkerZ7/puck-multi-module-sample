@@ -19,6 +19,13 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("com.amazonaws:aws-lambda-java-events:3.8.0")
+
+	implementation("org.slf4j:slf4j-api:1.7.25")
+	implementation("io.symphonia:lambda-logging:1.0.1:no-config")
+	implementation("com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.7")
+
+	implementation("com.amazonaws:aws-lambda-java-core:1.2.1")
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
